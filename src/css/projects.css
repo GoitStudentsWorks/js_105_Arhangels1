@@ -92,6 +92,10 @@ a{
     color: #FAFAFA;
 }
 
+.project-link:hover{
+    background-color: #E0373F;
+}
+
 .image-wrapper{
     box-sizing: border-box;
     background-color: #242527;
