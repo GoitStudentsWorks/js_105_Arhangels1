@@ -72,6 +72,7 @@ body {
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
+
 /* -------- / Reset styles ------ */
 
 .covers {
@@ -145,13 +146,48 @@ body {
    background-image: url(../img/covers/08-project.webp);
 }
 
+@media only screen and (min-resolution: 192dpi) {
+   .covers__item_bg1 {
+      background-image: url(../img/covers/01-project@2x.webp);
+   }
+
+   .covers__item_bg2 {
+      background-image: url(../img/covers/02-project@2x.webp);
+   }
+
+   .covers__item_bg3 {
+      background-image: url(../img/covers/03-project@2x.webp);
+   }
+
+   .covers__item_bg4 {
+      background-image: url(../img/covers/04-project@2x.webp);
+   }
+
+   .covers__item_bg5 {
+      background-image: url(../img/covers/05-project@2x.webp);
+   }
+
+   .covers__item_bg6 {
+      background-image: url(../img/covers/06-project@2x.webp);
+   }
+
+   .covers__item_bg7 {
+      background-image: url(../img/covers/07-project@2x.webp);
+   }
+
+   .covers__item_bg8 {
+      background-image: url(../img/covers/08-project@2x.webp);
+   }
+}
+
 .covers__item {
    flex-shrink: 0;
 
    color: transparent;
    margin-right: 20px;
    margin-left: 20px;
-   width: calc((100% - 120px) / 4); /* margin-right: 40px * 3  */
+   width: calc((100% - 120px) / 4);
+   /* margin-right: 40px * 3  */
    animation-name: move;
    animation-duration: 50s;
    animation-iteration-count: infinite;
