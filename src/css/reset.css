@@ -56,24 +56,21 @@ html {
 .container {
   margin: 0 auto;
   max-width: 375px;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
 /* Планшетні пристрої (768px) */
 @media (min-width: 768px) {
   .container {
-    margin: 0 auto;
     max-width: 768px;
     padding: 0 32px;
   }
 }
 
-/* Десктопні пристрої (1280px) */
-@media (min-width: 1280px) {
+/* Десктопні пристрої (1440px) */
+@media (min-width: 1440px) {
   .container {
-    margin: 0 auto;
-    max-width: 1280px;
-    padding: 0 65px;
+    max-width: 1440px;
   }
 }
 
