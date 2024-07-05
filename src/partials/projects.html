@@ -18,9 +18,14 @@
                         </div>
                     </div>
                     <div class="image-wrapper">
-                        <img srcset="./img/projects/mobile-project-1@2x.jpg 2x"
-                        src="./img/projects/mobile-project-1.jpg" 
-                        alt="Read journey application">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./img/projects/tablet-project-1.jpg 1x,
+                                                        ./img/projects/tablet-project-1@2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./img/projects/mobile-project-1.jpg 1x,
+                                                        ./img/projects/mobile-project-1@2x.jpg 2x">
+                        
+                            <img class="project-img" src="./img/projects/mobile-project-1.jpg" alt="Read journey application">
+                        </picture>
                     </div>
                 </li>
                 <li class="swiper-slide-demo projects-swiper-slide">
@@ -37,9 +42,14 @@
                         </div>
                     </div>
                     <div class="image-wrapper">
-                        <img srcset="./img/projects/mobile-project-2@2x.jpg 2x"
-                        src="../img/projects/mobile-project-2.jpg" 
-                        alt="PetLove application">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./img/projects/tablet-project-2.jpg 1x,
+                                                        ./img/projects/tablet-project-2@2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./img/projects/mobile-project-2.jpg 1x,
+                                                        ./img/projects/mobile-project-2@2x.jpg 2x">
+                        
+                            <img class="project-img" src="./img/projects/mobile-project-2.jpg" alt="PetLove application">
+                        </picture>
                     </div>
                 </li>
                 <li class="swiper-slide-demo projects-swiper-slide">
@@ -56,9 +66,14 @@
                         </div>
                     </div>
                     <div class="image-wrapper">
-                        <img srcset="./img/projects/mobile-project-3@2x.jpg 2x"
-                        src="../img/projects/mobile-project-3.jpg" 
-                        alt="VocabBuilder application">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./img/projects/tablet-project-3.jpg 1x,
+                                                        ./img/projects/tablet-project-3@2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./img/projects/mobile-project-3.jpg 1x,
+                                                        ./img/projects/mobile-project-3@2x.jpg 2x">
+                        
+                            <img class="project-img" src="./img/projects/mobile-project-3.jpg" alt="VocabBuilder application">
+                        </picture>
                     </div>
                 </li>
             </ul>
