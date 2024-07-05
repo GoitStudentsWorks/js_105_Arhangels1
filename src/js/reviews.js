@@ -2,19 +2,20 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 import axios from 'axios';
+// import 'swiper/css/navigation';
 
 const swiperOptions = {
   //   loop: true,
   modules: [Navigation],
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews-next-btn', //'.swiper-button-next',
+    prevEl: '.reviews-prev-btn', //'.swiper-button-prev',
   },
   // autoHeight: true,
+  direction: 'horizontal',
   keyboard: {
     enabled: true,
     onlyInViewport: true,
-    pageUpDown: true,
   },
   breakpoints: {
     320: {
@@ -32,7 +33,15 @@ const swiperOptions = {
 };
 const swiper = new Swiper('.swiper', swiperOptions);
 
-const slideWrapper = document.querySelector('.reviews-swiper-wrapper');
+const refs = {
+  slideWrapper: document.querySelector('.reviews-swiper-wrapper'),
+  prevBtn: document.querySelector('.reviews-prev-btn'),
+  nextBtn: document.querySelector('.reviews-next-btn'),
+};
+
+refs.prevBtn.classList.add('reviews-prev-btn-off');
+let reviewsArrLength;
+let reviewsCounter = 1;
 
 async function getReviews() {
   const res = await axios.get('https://portfolio-js.b.goit.study/api/reviews', {
@@ -41,8 +50,12 @@ async function getReviews() {
     },
   });
   console.log(res.data);
-  slideWrapper.insertAdjacentHTML('afterbegin', slidesTemplate(res.data));
+  reviewsArrLength = res.data.length;
+  console.log(reviewsArrLength);
+  refs.slideWrapper.insertAdjacentHTML('afterbegin', slidesTemplate(res.data));
 }
+
+getReviews();
 
 function slideTemplate(slide) {
   return `<div class="swiper-slide reviews-swiper-slide">
@@ -62,4 +75,13 @@ function slidesTemplate(slades) {
   return slades.map(slideTemplate).join('');
 }
 
-getReviews();
+refs.nextBtn.addEventListener('click', () => {
+  reviewsCounter++;
+  refs.prevBtn.classList.remove('reviews-prev-btn-off');
+  console.log(reviewsCounter, reviewsArrLength);
+  if (reviewsCounter === reviewsArrLength) {
+    refs.nextBtn.classList.add('reviews-prev-btn-off');
+
+    console.log('!!!');
+  }
+});
