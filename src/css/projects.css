@@ -32,12 +32,7 @@ a{
     margin-bottom: 32px;
 }
 
-.swiper-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.swiper-slide{
+.projects-swiper-slide{
     background-color: #FAFAFA;
     width: 343px;
     height: 812px;
@@ -117,4 +112,8 @@ a{
     padding: 14px;
     width: 52px;
     height: 52px;
+}
+
+.arrow-prev{
+    transform: rotateY(180deg);
 }
