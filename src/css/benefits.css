@@ -98,10 +98,10 @@ ol {
   }
 
   .benefits-list {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    column-gap: 16px;
   }
 
   .benefits-list-item {
