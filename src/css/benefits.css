@@ -97,6 +97,13 @@ ol {
     padding-bottom: 96px;
   }
 
+  .benefits-list {
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
   .benefits-list-item {
     width: calc((100% - 16px) / 2);
   }
@@ -118,6 +125,7 @@ ol {
   .benefits-item-title {
     margin-bottom: 3px;
   }
+
   .benefits-list-item {
     width: calc((100% - 16px) / 2);
   }
