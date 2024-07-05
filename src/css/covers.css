@@ -8,56 +8,10 @@
    box-sizing: border-box;
 }
 
-*:focus {
-   outline: transparent;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-   font-weight: inherit;
-   font-size: inherit;
-}
-
-ul,
-ol,
-li {
-   list-style: none;
-}
-
-a {
-   text-decoration: none;
-   color: inherit;
-}
-
-button {
-   background-color: transparent;
-   cursor: pointer;
-   border: none;
-   line-height: 0;
-}
-
-input,
-textarea,
-button {
-   font-family: inherit;
-   font-weight: inherit;
-   font-size: inherit;
-   color: inherit;
-}
-
 img {
    display: block;
    max-width: 100%;
    height: auto;
-}
-
-html,
-body {
-   line-height: 1;
 }
 
 .visually-hidden {
@@ -88,8 +42,6 @@ body {
    position: absolute;
    top: 0;
    left: 0;
-   font-size: 34px;
-
 
    width: 100%;
    height: 100vh;
@@ -98,40 +50,10 @@ body {
    background-color: #1c1d20;
 }
 
-/* ============ TABLET =================== */
-@media only screen and (min-width: 768px) {
-   .covers {
-      max-width: 768px;
-   }
-
-   .covers__content {
-      background: url('../img/covers/decor.svg') 0 0 / 400px no-repeat, url('../img/covers/decor.svg') 100% 100% / 400px no-repeat;
-      background-color: #1c1d20;
-      background-size: 360px auto;
-   }
-}
-
-/* ============ /TABLET =================== */
-
-/* ============ DESKTOP =================== */
-@media only screen and (min-width: 1100px) {
-   .covers {
-      max-width: 1100px;
-   }
-
-   .covers__content {
-      background: url('../img/covers/decor.svg') 0 0 / 400px no-repeat, url('../img/covers/decor.svg') 100% 100% / 400px no-repeat;
-      background-color: #1c1d20;
-      background-size: 360px auto;
-   }
-}
-/* ============ /DESKTOP ================== */
-
-
 .covers__list {
-   height: 314px;
+   height: 163px;
    display: flex;
-   margin-bottom: 100px;
+   margin-bottom: 58px;
 
    transform: rotate(16deg);
 }
@@ -176,6 +98,7 @@ body {
    background-image: url(../img/covers/08-project.webp);
 }
 
+
 @media only screen and (min-resolution: 192dpi) {
    .covers__item_bg1 {
       background-image: url(../img/covers/01-project@2x.webp);
@@ -212,12 +135,12 @@ body {
 
 .covers__item {
    flex-shrink: 0;
-
+   flex-basis: 283px;
+   background-size: cover;
    color: transparent;
    margin-right: 20px;
    margin-left: 20px;
-   width: calc((100% - 120px) / 4);
-   /* margin-right: 40px * 3  */
+   
    animation-name: move;
    animation-duration: 50s;
    animation-iteration-count: infinite;
@@ -228,10 +151,57 @@ body {
 
 @keyframes move {
    from {
-      transform: translateX(400%);
+      transform: translateX(0%);
    }
 
    to {
-      transform: translateX(-870%);
+      transform: translateX(-800%);
    }
 }
+
+/* ============= /MOBILE ================ */
+
+
+
+/* ============ TABLET =================== */
+@media only screen and (min-width: 768px) {
+   .covers {
+      max-width: 768px;
+   }
+
+   .covers__content {
+      background: url('../img/covers/decor.svg') 0 0 / 400px no-repeat, url('../img/covers/decor.svg') 100% 100% / 400px no-repeat;
+      background-color: #1c1d20;
+      background-size: 360px auto;
+   }
+
+   .covers__list {
+      height: 314px;
+      margin-bottom: 115px;
+   }
+
+   .covers__item {
+      flex-basis: 544px;
+   }
+}
+
+/* ============ /TABLET =================== */
+
+
+
+/* ============ DESKTOP =================== */
+@media only screen and (min-width: 1440px) {
+   .covers {
+      max-width: 1400px;
+   }
+
+   .covers__content {
+      background: url(../img/covers/decor.svg) -10% 15% no-repeat,
+         url(../img/covers/decor.svg) 33% -25% no-repeat,
+         url(../img/covers/decor.svg) 110% 130% no-repeat;
+      background-color: #1c1d20;
+      background-size: 360px auto;
+   }
+}
+
+/* ============ /DESKTOP ================== */
