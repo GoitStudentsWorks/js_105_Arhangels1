@@ -30,13 +30,14 @@ const swiperOptions = {
     },
   },
 };
-const swiper = new Swiper('.swiper', swiperOptions);
-swiper.on('reachBeginning', function () {
+const swiperReviews = new Swiper('.swiper', swiperOptions);
+
+swiperReviews.on('reachBeginning', function () {
   refs.prevBtn.classList.add('reviews-prev-btn-off');
   refs.nextBtn.classList.remove('reviews-prev-btn-off');
 });
 
-swiper.on('reachEnd', function () {
+swiperReviews.on('reachEnd', function () {
   refs.nextBtn.classList.add('reviews-prev-btn-off');
   refs.prevBtn.classList.remove('reviews-prev-btn-off');
 });
