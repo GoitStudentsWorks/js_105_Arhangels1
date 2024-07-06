@@ -1,3 +1,8 @@
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
+new Accordion('.faq-all-questions');
+
 document.addEventListener('DOMContentLoaded', function () {
   const faqItems = document.querySelectorAll('.faq-item');
 
