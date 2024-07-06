@@ -1,7 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
-import 'swiper/css/navigation';
 
 const swiper = new Swiper('.projects-swiper', {
 
