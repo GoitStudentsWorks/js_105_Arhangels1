@@ -80,7 +80,6 @@
 
 @media screen and (min-width: 768px) {
     .hero-section {
-        min-width: 768px;
         height: 1024px;
     }
 
@@ -101,14 +100,32 @@
 
     #hero-contacts ul li a {
         font-size: 16px;
+        height: 55px;
+        width: 55px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    #hero-contacts p a {
+        padding: 18px 24px;
+        height: 55px;
+        font-size: 16px;
     }
 }
 
-/* font-size: 14px;
-font-weight: 500;
-width: 37px;
-border-radius: 60px;
-border: 1px solid rgba(250, 250, 250, 0.20);
-display: flex;
-justify-content: center;
-align-items: center; */
+/* Media. Desktop */
+
+@media screen and (min-width: 1440px) {
+    .hero-section {
+        height: 900px;
+    }
+
+    .hero-container {
+        max-width: 1374px;
+    }
+
+    .hero-title {
+        margin: 0 auto 243px;
+        width: 1160px;
+    }
+}
