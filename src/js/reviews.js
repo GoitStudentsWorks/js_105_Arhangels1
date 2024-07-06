@@ -30,7 +30,7 @@ const swiperOptions = {
     },
   },
 };
-const swiperReviews = new Swiper('.swiper', swiperOptions);
+const swiperReviews = new Swiper('.swiper-reviews', swiperOptions);
 
 swiperReviews.on('reachBeginning', function () {
   refs.prevBtn.classList.add('reviews-prev-btn-off');
