@@ -126,11 +126,12 @@
 }
 
 @media only screen and (min-width: 1440px){
-    
+
     .projects-swiper-slide {
         flex-direction: row;
         /* авто стилі додають display: block; тому не працюють флекси */
         width: 1376px;
+        max-height: 625px;
     }
 
     .image-wrapper{
