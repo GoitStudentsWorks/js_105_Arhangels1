@@ -42,9 +42,14 @@
 
 }
 
+.about-me__list__item{
+  transition: padding 250ms ease-out;
+}
+
 .about-me__list__item.is-active{
   padding-bottom:32px;
 }
+
 .about-me__list__item__header__trigger__icon{
   transition:transform 250ms ease-in-out;
 }
@@ -70,23 +75,6 @@
   font-weight:500;
   font-size:16px;
   line-height:calc(24 / 16);
-}
-
-.education__link{
-  display:flex;
-  flex-direction: column;
-  gap:10px;
-
-  width:465px;
-
-  font-weight:500;
-  font-size:16px;
-  line-height:calc(24 / 16);
-
-}
-
-.education__link .item:first-child{
-  width:369px;
 }
 
 @media screen and (max-width:1439px){
