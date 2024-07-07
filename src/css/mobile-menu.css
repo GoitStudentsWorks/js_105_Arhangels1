@@ -1,1 +1,6 @@
-
+.mobile-menu-close {
+    position: absolute;
+    top: 32px;
+    right: 16px;
+    display: flex;
+}
