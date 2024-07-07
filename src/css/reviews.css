@@ -75,17 +75,11 @@ img {
   height: 52px;
   background-color: transparent;
   cursor: pointer;
+  fill: rgba(250, 250, 250, 0.5);
 }
 .reviews-prev-btn-off {
   border: 1px solid rgba(250, 250, 250, 0.2);
-}
-
-.reviews-arrow-prev-svg {
-  transform: rotate(-180deg);
-}
-
-.reviews-arrow-next-svg {
-  fill: aquamarine;
+  fill: rgba(250, 250, 250, 0.2);
 }
 
 @media screen and (min-width: 767px) {
