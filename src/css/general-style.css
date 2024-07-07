@@ -5,9 +5,11 @@ html {
 body {
    font-family: "Inter Tight", sans-serif;
    font-weight: 500;
+   font-size: 14px;
    line-height: 1.5;
    letter-spacing: -0.02em;
    color: #fafafa;
+   background-color: #1c1d20;
 }
 
 .visually-hidden {
@@ -54,8 +56,12 @@ body {
 
 .section-title {
    font-weight: 600;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: -0.02em;
    text-transform: uppercase;
    color: rgba(250, 250, 250, 0.4);
+   margin-bottom: 32px;
    text-align: left;
 }
 
@@ -116,9 +122,10 @@ body {
    text-align: center;
 
    display: inline-block;
+   margin-right: auto;
    background-color: #ed3b44;
    border-radius: 60px;
-   padding: 13px 10px;
+   padding: 13px 32px;
    min-width: 141px;
    height: 45px;
    transition: background-color 250ms ease;
@@ -133,6 +140,7 @@ body {
    .button-accent-color {
       min-width: 177px;
       height: 55px;
+      padding: 18px 50px;
    }
 }
 /* /Button-accent-color ---------------------*/
