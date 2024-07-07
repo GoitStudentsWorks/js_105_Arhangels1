@@ -1,10 +1,10 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 
 const swiper = new Swiper('.projects-swiper', {
 
-    modules: [Navigation],
+    modules: [Navigation, Keyboard],
     navigation: {
         nextEl: '.projects-button-next',
         prevEl: '.projects-button-prev',

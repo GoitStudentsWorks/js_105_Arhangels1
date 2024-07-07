@@ -1,24 +1,13 @@
-.section-title{
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: rgba(250, 250, 250, 0.4);
-    margin-bottom: 32px;
-}
-
 .projects-swiper-slide{
     display: flex;
     flex-direction: column;
-    background-color: #FAFAFA;
-    width: 343px;
-    height: 812px;
     border-radius: 24px;
     margin-bottom: 32px;
+    overflow: hidden;
 }
 
 .swiper-slide-description{
+    background-color: #FAFAFA;
     padding: 32px;
     height: 417px;
     display: flex;
@@ -53,28 +42,10 @@
     color: #1c1d20;
 }
 
-.project-link{
-    display: block;
-    text-align: center;
-    border-radius: 60px;
-    padding: 13px 32px;
-    width: 141px;
-    height: 45px;
-    background-color: #ED3B44;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    color: #FAFAFA;
-}
-
-.project-link:hover{
-    background-color: #E0373F;
-}
-
 .image-wrapper{
     background-color: #242527;
-    border-radius: 0 0 24px 24px;
-    width: 343px;
-    height: 395px;
+    width: 100%;
+    height: 100%;
     padding: 100px 16px;
 }
 
@@ -85,14 +56,21 @@
 }
 
 .arrow-btn{
-    border: 1px solid rgba(250, 250, 250, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(250, 250, 250, 0.5);
     border-radius: 60px;
     padding: 14px;
     width: 52px;
     height: 52px;
 }
 
-.arrow-prev{
+.arrow-btn:disabled{
+    border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.arrow-prev-svg{
     transform: rotateY(180deg);
 }
 
@@ -112,16 +90,20 @@
         line-height: 1;
     }
 
-    .project-link{
-        padding: 18px 50px;
-        width: 177px;
-        height: 55px;
+    .image-wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 120px 45px;
     }
 
-    .image-wrapper {
-        width: 704px;
-        height: 625px;
-        padding: 120px 45px;
+    .buttons-wrapper{
+        gap: 20px;
+    }
+
+    .arrow-btn{
+        width: 68px;
+        height: 68px;
+        padding: 18px;
     }
 }
 
