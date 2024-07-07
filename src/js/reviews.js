@@ -89,7 +89,6 @@ refs.prevBtn.addEventListener('click', () => {
 });
 
 document.addEventListener('keydown', e => {
-  e.preventDefault();
   if (e.code === 'ArrowRight') {
     refs.prevBtn.classList.remove('reviews-prev-btn-off');
   }
