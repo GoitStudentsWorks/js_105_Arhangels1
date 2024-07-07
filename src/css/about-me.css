@@ -3,9 +3,6 @@
   --border-color: #FAFAFA33;
 }
 
-.about-me{
-  padding:20px;
-}
 .ac{
   background-color:transparent !important;
   border:none !important;
@@ -25,6 +22,7 @@
   display: flex !important;
   flex-direction: column !important;
   gap:32px !important;
+  margin-bottom:96px;
 }
 
 .about-me__list__item__header{
@@ -93,7 +91,83 @@
 .education__link .education__link__item:first-child{
   width:369px;
 }
+
+.about-me__swiper__container{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skills__swiper{
+  display:flex;
+  align-items: center;
+  gap:72px;
+  overflow: hidden;
+  margin-left:0;
+}
+
+.skills__swiper__wrapper{
+  display:flex;
+  width:1200px;
+}
+
+.skills__swiper__wrapper__item{
+  display:flex !important;
+  justify-content: center;
+  align-items: center;
+  width:200px;
+  height:200px;
+  border:1px solid var(--border-color);
+  border-radius:50%;
+}
+
+.skill__swiper__next__icon{
+  cursor:pointer;
+}
+
+.next-slide-bg{
+  background-color:var(--red--color);
+}
+
+@media screen and (max-width:766px){
+  .about-me__swiper__container{
+    margin-bottom:64px;
+  }
+
+  .skills__swiper{
+    width:260px;
+  }
+
+  .skills__swiper__wrapper__item{
+    min-height:130px;
+  }
+
+  .skill__swiper__next__icon{
+    width:24px;
+    height:24px;
+  }
+}
+
+@media screen and (min-width:767px) and (max-width: 1439px){
+  .skills__swiper{
+    width:600px;
+  }
+
+  .skills__swiper__wrapper__item{
+    min-height:200px;
+  }
+
+  .skill__swiper__next__icon{
+    width:40px;
+    height:40px;
+  }
+}
+
 @media screen and (max-width:1439px){
+  .about-me__swiper__container{
+    margin-bottom:96px;
+  }
+
   .about-me__list__item__content{
     width:100%;
     margin-left: auto;
@@ -116,4 +190,26 @@
   .education__link .item:first-child{
     width:100%;
   }
+}
+
+@media screen and (min-width:1439px){
+  .about-me__swiper__container{
+    width:100%;
+    margin-bottom:164px;
+  }
+
+  .skills__swiper{
+    width:1200px;
+  }
+
+  .skills__swiper__wrapper__item{
+    min-height:200px;
+  }
+
+  .skill__swiper__next__icon{
+    width:24px;
+    height:24px;
+  }
+
+
 }
