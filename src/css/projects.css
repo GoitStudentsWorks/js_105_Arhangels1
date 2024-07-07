@@ -98,11 +98,6 @@
 
 @media only screen and (min-width: 768px) {
 
-    .projects-swiper-slide{
-        width: 704px;
-        height: 1191px;
-    }
-
     .swiper-slide-description {
         padding: 64px;
         height: 566px;
@@ -131,10 +126,12 @@
 }
 
 @media only screen and (min-width: 1440px){
+
     .projects-swiper-slide {
         flex-direction: row;
+        /* авто стилі додають display: block; тому не працюють флекси */
         width: 1376px;
-        height: 625px;
+        max-height: 625px;
     }
 
     .image-wrapper{
@@ -146,5 +143,6 @@
 
     .swiper-slide-description{
         width: 688px;
+        height: 625px;
     }
 }

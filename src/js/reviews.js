@@ -1,12 +1,11 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 import axios from 'axios';
-// import 'swiper/css/navigation';
 
 const swiperOptions = {
   //   loop: true,
-  modules: [Navigation],
+  modules: [Navigation, Keyboard],
   navigation: {
     nextEl: '.reviews-next-btn', //'.swiper-button-next',
     prevEl: '.reviews-prev-btn', //'.swiper-button-prev',
@@ -31,7 +30,17 @@ const swiperOptions = {
     },
   },
 };
-const swiper = new Swiper('.swiper', swiperOptions);
+const swiperReviews = new Swiper('.swiper-reviews', swiperOptions);
+
+swiperReviews.on('reachBeginning', function () {
+  refs.prevBtn.classList.add('reviews-prev-btn-off');
+  refs.nextBtn.classList.remove('reviews-prev-btn-off');
+});
+
+swiperReviews.on('reachEnd', function () {
+  refs.nextBtn.classList.add('reviews-prev-btn-off');
+  refs.prevBtn.classList.remove('reviews-prev-btn-off');
+});
 
 const refs = {
   slideWrapper: document.querySelector('.reviews-swiper-wrapper'),
@@ -40,8 +49,6 @@ const refs = {
 };
 
 refs.prevBtn.classList.add('reviews-prev-btn-off');
-let reviewsArrLength;
-let reviewsCounter = 1;
 
 async function getReviews() {
   const res = await axios.get('https://portfolio-js.b.goit.study/api/reviews', {
@@ -49,9 +56,7 @@ async function getReviews() {
       accept: 'application/json',
     },
   });
-  console.log(res.data);
-  reviewsArrLength = res.data.length;
-  console.log(reviewsArrLength);
+
   refs.slideWrapper.insertAdjacentHTML('afterbegin', slidesTemplate(res.data));
 }
 
@@ -76,12 +81,19 @@ function slidesTemplate(slades) {
 }
 
 refs.nextBtn.addEventListener('click', () => {
-  reviewsCounter++;
   refs.prevBtn.classList.remove('reviews-prev-btn-off');
-  console.log(reviewsCounter, reviewsArrLength);
-  if (reviewsCounter === reviewsArrLength) {
-    refs.nextBtn.classList.add('reviews-prev-btn-off');
+});
 
-    console.log('!!!');
+refs.prevBtn.addEventListener('click', () => {
+  refs.nextBtn.classList.remove('reviews-prev-btn-off');
+});
+
+document.addEventListener('keydown', e => {
+  e.preventDefault();
+  if (e.code === 'ArrowRight') {
+    refs.prevBtn.classList.remove('reviews-prev-btn-off');
+  }
+  if (e.code === 'ArrowLeft') {
+    refs.nextBtn.classList.remove('reviews-prev-btn-off');
   }
 });
