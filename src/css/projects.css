@@ -1,7 +1,6 @@
 .projects-swiper-slide{
     display: flex;
     flex-direction: column;
-    height: 812px;
     border-radius: 24px;
     margin-bottom: 32px;
     overflow: hidden;
