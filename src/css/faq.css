@@ -14,14 +14,18 @@
 }
 
 .faq-question {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.02em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+  margin-bottom: 26px;
 }
 
 .faq-btn {
@@ -44,7 +48,7 @@
   transition: transform 0.3s ease;
 }
 
-.faq-item.active .faq-arrow {
+.faq-item.is-active .faq-arrow {
   transform: rotate(180deg);
 }
 
