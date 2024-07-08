@@ -213,10 +213,11 @@
 /* ============ DESKTOP =================== */
 @media only screen and (min-width: 1440px) {
    .covers {
-      max-width: 1440px;
+      min-width: 100%;
    }
 
    .covers__content {
+
       background: url(../img/covers/decor.svg) -6% 15% no-repeat,
          url(../img/covers/decor.svg) 33% -15% no-repeat,
          url(../img/covers/decor.svg) 109% 111% no-repeat;
