@@ -61,7 +61,7 @@
   flex-direction: column;
 }
 
-input{
+.footer__form__input{
   font-weight:500;
   font-size:16px;
   line-height:1.5;
@@ -75,7 +75,7 @@ input{
   text-overflow: ellipsis;
 }
 
-input[name='email']:valid{
+.footer__form__input[name='email']:valid{
   border-bottom:1px solid var(--valid);
 }
 
@@ -87,7 +87,7 @@ input[name='email']:valid{
   color:var(--invalid)
 }
 
-input[name='email']:focus:invalid{
+.footer__form__input[name='email']:focus:invalid{
   border-bottom:1px solid var(--invalid);
 }
 
@@ -224,7 +224,7 @@ input[name='email']:focus:invalid{
     display: block;
   }
 
-  input{
+  .footer__form__input{
     width:245px;
     margin-right:32px;
   }
@@ -264,11 +264,11 @@ input[name='email']:focus:invalid{
     margin-bottom:78px;
   }
 
-  input{
+  .footer__form__input{
     min-width:390px;
   }
 
-  input:nth-child(2){
+  .footer__form__input:nth-child(2){
     margin-right:86px;
   }
 
