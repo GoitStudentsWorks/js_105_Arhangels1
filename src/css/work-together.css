@@ -24,8 +24,13 @@
   visibility: hidden;
   pointer-events: none;
 }
+
 .footer{
   background-color:var(--background--color);
+}
+
+.footer{
+  padding:32px 16px;
 }
 
 .footer__title{
