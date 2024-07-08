@@ -25,6 +25,10 @@ const swiper = new Swiper('.skills__swiper', {
     onlyInViewport: true,
   },
   breakpoints: {
+    0: {
+      slidePerView:2,
+      loop:true,
+    },
     320: {
       slidesPerView: 2,
       loop:true,
