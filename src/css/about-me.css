@@ -129,7 +129,7 @@
   background-color:var(--red--color);
 }
 
-@media screen and (max-width:766px){
+@media screen and (max-width:768px){
   .about-me__swiper__container{
     margin-bottom:64px;
   }
@@ -139,6 +139,7 @@
   }
 
   .skills__swiper__wrapper__item{
+    min-width:130px;
     min-height:130px;
   }
 
@@ -148,7 +149,7 @@
   }
 }
 
-@media screen and (min-width:767px) and (max-width: 1439px){
+@media screen and (min-width:768px) and (max-width: 1439px){
   .skills__swiper{
     width:600px;
   }

@@ -27,7 +27,7 @@ const swiper = new Swiper('.skills__swiper', {
       slidesPerView: 2,
       loop:true,
     },
-    767: {
+    768: {
       slidesPerView: 3,
       loop:true,
     },
