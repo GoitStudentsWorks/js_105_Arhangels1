@@ -76,8 +76,8 @@ function slideTemplate(slide) {
         </div>`;
 }
 
-function slidesTemplate(slades) {
-  return slades.map(slideTemplate).join('');
+function slidesTemplate(slides) {
+  return slides.map(slideTemplate).join('');
 }
 
 refs.nextBtn.addEventListener('click', () => {
