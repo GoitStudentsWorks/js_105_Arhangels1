@@ -1,6 +1,31 @@
 :root {
   --title-color:#FAFAFA66;
   --border-color: #FAFAFA33;
+  --background--color: #242527;
+
+}
+
+.about-me__represent__text{
+  display: flex;
+  padding:32px 32px 0 32px;
+  max-width:343px;
+  height:500px;
+  background-color: var(--background--color);
+  text-transform: uppercase;
+
+  font-weight:500;
+  font-size:24px;
+  line-height:1.16;
+}
+
+.functional__text{
+  display:inline;
+  color:var(--red--color);
+}
+
+.websites__text{
+  display:inline;
+  color:var(--border--color);
 }
 
 .ac{
@@ -130,6 +155,20 @@
 }
 
 @media screen and (max-width:768px){
+
+  .about-me__represent{
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+    margin-bottom:64px;
+  }
+
+  .about-me__represent__image{
+    max-width:343px;
+    border-radius:24px;
+    overflow:hidden;
+  }
+
   .about-me__swiper__container{
     margin-bottom:64px;
   }
@@ -152,6 +191,24 @@
 @media screen and (min-width:768px) and (max-width: 1439px){
   .skills__swiper{
     width:600px;
+  }
+
+  .about-me__represent{
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+    margin-bottom:64px;
+  }
+
+  .about-me__represent__image{
+    max-width:704px;
+    border-radius:24px;
+    overflow:hidden;
+  }
+
+  .about-me__represent__text{
+    max-width:100%;
+    font-size:38px;
   }
 
   .skills__swiper__wrapper__item{
@@ -194,6 +251,24 @@
 }
 
 @media screen and (min-width:1439px){
+  .about-me__represent{
+    display: flex;
+    gap:16px;
+    margin-bottom:94px;
+  }
+
+  .about-me__represent__image{
+    width:680px;
+    border-radius:24px;
+    overflow: hidden;
+  }
+
+  .about-me__represent__text{
+    max-width:680px;
+    font-size:38px;
+    padding:64px 64px 0 64px;
+  }
+
   .about-me__swiper__container{
     width:100%;
     margin-bottom:164px;

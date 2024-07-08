@@ -5,7 +5,9 @@ import {Navigation, Keyboard, Mousewheel} from 'swiper/modules';
 import 'swiper/css';
 
 document.addEventListener("DOMContentLoaded", () => {
-  new Accordion('.about-me__list');
+  new Accordion('.about-me__list', {
+    openOnInit:[0]
+  });
 });
 
 
