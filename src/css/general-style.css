@@ -26,22 +26,23 @@ body {
 }
 
 /* Container ---------------------- */
+
+/* Мобільні пристрої (375px) */
 .container {
-   max-width: 767px;
-   padding-left: 16px;
-   padding-right: 16px;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 0 auto;
+   max-width: 375px;
+   padding: 0 16px;
 }
 
+/* Планшетні пристрої (768px) */
 @media only screen and (min-width: 768px) {
    .container {
       max-width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
+      padding: 0 32px;
    }
 }
 
+/* Десктопні пристрої (1440px) */
 @media only screen and (min-width: 1440px) {
    .container {
       max-width: 1440px;
