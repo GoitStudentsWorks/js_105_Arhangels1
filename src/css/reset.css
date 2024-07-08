@@ -39,42 +39,6 @@ img {
   height: auto;
 }
 
-body {
-  font-family: 'Inter Tight';
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  color: #fafafa;
-  background-color: #1c1d20;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Мобільні пристрої (375px) */
-.container {
-  margin: 0 auto;
-  max-width: 375px;
-  padding: 0 16px;
-}
-
-/* Планшетні пристрої (768px) */
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-
-/* Десктопні пристрої (1440px) */
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
 address {
   font-style: normal;
 }
