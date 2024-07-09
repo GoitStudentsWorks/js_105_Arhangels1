@@ -10,7 +10,7 @@ const socialMediaLinks = [
     { name: 'GH', url: 'https://github.com/Arhangels1/project-14' }
 ];
 
-const socialMediaListHTML = socialMediaLinks.map(link => `<li><a href='${link.url}' target='_blank'>${link.name}</a></li>`).join('');
+const socialMediaListHTML = socialMediaLinks.map(link => `<li><a href='${link.url}' target='_blank' rel="noopener noreferrer nofollow">${link.name}</a></li>`).join('');
 
 socialMediaList.insertAdjacentHTML('beforeend', socialMediaListHTML);
 heroContacts.appendChild(socialMediaList);
