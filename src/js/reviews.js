@@ -63,17 +63,17 @@ async function getReviews() {
 getReviews();
 
 function slideTemplate(slide) {
-  return `<div class="swiper-slide reviews-swiper-slide">
+  return `<li class="swiper-slide reviews-swiper-slide">
           <img
             class="reviews-img"
             src="${slide.avatar_url}"
-            alt="Natalia"
+            alt="${slide.author}"
           />
           <div class="reviews-desc">
             <p class="reviews-name">${slide.author}</p>
             <p class="reviews-text">${slide.review}</p>
           </div>
-        </div>`;
+        </li>`;
 }
 
 function slidesTemplate(slides) {
