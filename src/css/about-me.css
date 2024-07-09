@@ -160,8 +160,6 @@
   display: flex !important;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
   border: 1px solid var(--border-color);
   border-radius: 50%;
 }
@@ -212,6 +210,10 @@
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .skills__swiper {
     width: 600px;
+  }
+  .skills__swiper__wrapper__item{
+    width: 200px;
+    height: 200px;
   }
 
   .about-me__represent {
