@@ -87,6 +87,11 @@ left: 0;
     background-color: #ed3b44;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+                .header-link-btn:hover,
+                .header-link-btn:focus,
+                .header-link-btn:active {
+                  background-color: #e0373f;
+                }
 
         .header-list-item {
           border-bottom: 2px solid transparent;

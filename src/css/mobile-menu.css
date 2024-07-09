@@ -3,7 +3,8 @@
     top: 0;
     left: 0;
     min-width: 100%;
-    min-height: 812px;
+    background-position: center;
+
     padding: 15px;
 /*     background-color: blue; */
     object-fit: fill;
@@ -106,15 +107,15 @@
 }
 
 .mobile-menu-order-btn:hover,
-.mobile-order-btn:focus,
-.mobile-order-btn:active {
+.mobile-menu-order-btn:focus,
+.mobile-menu-order-btn:active {
     background-color: #e0373f;
 }
 
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
     .mobile-menu {
         object-fit: fill;
-        /* background-image: url(); */
+        background-image: url('../img/hero/background-glass@x2.png');
     }
 }
 
