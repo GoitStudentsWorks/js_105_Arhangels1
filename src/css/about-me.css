@@ -1,19 +1,24 @@
 :root {
   --title-color: #FAFAFA66;
   --border-color: #FAFAFA33;
-  --background--color: #242527;
+  --background-text-color: #242527;
   --icon-arrow-right-color: #3B3B3B;
-  --icon-border-color:#FAFAFA33;
+  --icon-border-color: #FAFAFA33;
 
 }
 
+.hidden-title{
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+}
 .about-me__represent__text {
   display: flex;
   padding: 32px 32px 0 32px;
   max-width: 343px;
   height: 500px;
   border-radius: 24px;
-  background-color: var(--background--color);
+  background-color: var(--background-text-color);
   text-transform: uppercase;
 
   font-weight: 500;
@@ -59,7 +64,7 @@
   justify-content: space-between !important;
   height: 40px !important;
   cursor: pointer;
-  margin-bottom:32px !important;
+  margin-bottom: 32px !important;
 }
 
 .about-me__list__item__header__title {
@@ -78,13 +83,13 @@
   padding-bottom: 32px;
 }
 
-.about-me__list__item__header__trigger{
+.about-me__list__item__header__trigger {
   display: flex;
   align-items: center;
   justify-content: center;
-  border:1px solid var(--icon-border-color);
-  border-radius:100px;
-  padding:10px;
+  border: 1px solid var(--icon-border-color);
+  border-radius: 100px;
+  padding: 10px;
 }
 
 .about-me__list__item__header__trigger__icon {
@@ -172,6 +177,10 @@
 
 @media screen and (max-width: 768px) {
 
+  .about-me {
+    padding-bottom: 64px;
+  }
+
   .about-me__represent {
     display: flex;
     flex-direction: column;
@@ -185,17 +194,13 @@
     overflow: hidden;
   }
 
-  .about-me__swiper__container {
-    margin-bottom: 64px;
-  }
-
   .skills__swiper {
     width: 260px;
   }
 
   .skills__swiper__wrapper__item {
     min-width: 130px;
-    min-height: 130px;
+    min-height:130px;
   }
 
   .skill__swiper__next__icon {
@@ -238,10 +243,6 @@
 }
 
 @media screen and (max-width: 1439px) {
-  .about-me__swiper__container {
-    margin-bottom: 96px;
-  }
-
   .about-me__list__item__content {
     width: 100%;
     margin-left: auto;
@@ -267,6 +268,10 @@
 }
 
 @media screen and (min-width: 1439px) {
+  .about-me{
+    padding-bottom:164px;
+  }
+
   .about-me__represent {
     display: flex;
     gap: 16px;
@@ -281,13 +286,13 @@
 
   .about-me__represent__text {
     max-width: 680px;
+    height: 616px;
     font-size: 38px;
     padding: 64px 64px 0 64px;
   }
 
   .about-me__swiper__container {
     width: 100%;
-    margin-bottom: 164px;
   }
 
   .skills__swiper {
