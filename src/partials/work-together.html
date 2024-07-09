@@ -1,49 +1,58 @@
-<footer class="footer container" id="work-together">
-  <h1 class="footer__title"><div class="footer__title__image">
-      <picture>
-        <source
-          srcset="
-                  ./img/work-together/user-icon-mobile@1x.webp 1x,
-                  ./img/work-together/user-icon-mobile@2x.webp 2x,
-                  ./img/work-together/user-icon-mobile@3x.webp 3x
-                "
-          media="(max-width:767px)"
-        />
-        <source
-          srcset="
-                  ./img/work-together/user-icon.webp 1x,
-                  ./img/work-together/user-icon2x.webp 2x,
-                  ./img/work-together/user-icon3x.webp  3x
-                "
-          media="(min-width:768px)"
-        />
-        <img src="../img/work-together/user-icon-mobile@1x.webp" alt="user-icon" />
-      </picture>
-  </div>
-    <p class="footer__title__top">LET'S <span class="footer__title__work">WORK</span></p> TOGETHER
-  </h1>
+<footer class="footer" id="work-together">
+  <div class="footer-container container">
+    <h1 class="footer__title">
+      <div class="footer__title__image">
+        <picture>
+          <source
+            srcset="
+                    ./img/work-together/user-icon-mobile@1x.webp 1x,
+                    ./img/work-together/user-icon-mobile@2x.webp 2x,
+                    ./img/work-together/user-icon-mobile@3x.webp 3x
+                  "
+            media="(max-width:767px)"
+          />
+          <source
+            srcset="
+                    ./img/work-together/user-icon.webp 1x,
+                    ./img/work-together/user-icon2x.webp 2x,
+                    ./img/work-together/user-icon3x.webp  3x
+                  "
+            media="(min-width:768px)"
+          />
+          <img src="../img/work-together/user-icon-mobile@1x.webp" alt="user-icon"/>
+        </picture>
+      </div>
+      <p class="footer__title__top">LET'S <span class="footer__title__work">WORK</span></p> TOGETHER
+    </h1>
 
-  <form class="footer__form">
-    <label class="footer__form__label">
-      <input class='footer__form__input' type="email" name='email' pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com" required>
-      <span class="footer__form--is-valid"></span>
-    </label>
-    <input class="footer__form__input" type="text" placeholder="comments" name="comment" required>
+    <form class="footer__form">
+      <label class="footer__form__label">
+        <input class='footer__form__input' type="email" name='email' pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+               placeholder="clients@gmail.com" required>
+        <span class="footer__form--is-valid"></span>
+      </label>
+      <input class="footer__form__input" type="text" placeholder="comments" name="comment" required>
 
-    <button type="submit" class="footer__form__submit">
-      <div class="loader is-hidden"></div>
-      Send
-    </button>
-  </form>
+      <button type="submit" class="footer__form__submit">
+        <div class="loader is-hidden"></div>
+        Send
+      </button>
+    </form>
 
-  <div class="footer__links">
-    <a href="mailto:lloydjefferson@gmail.com" class="footer__links__link">lloydjefferson@gmail.com</a>
-    <a href="tel:+3801111111111" class="footer__links__link">+380 11 1111 11 11</a>
+    <ul class="footer__links">
+      <li class="footer__links__link">
+        <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com
+        </a>
+      </li>
+      <li class="footer__links__link">
+        <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+      </li>
+    </ul>
   </div>
 </footer>
 
 <div class="backdrop is-hidden--modal">
-  <div class="backdrop__modal" >
+  <div class="backdrop__modal">
     <div class="modal"></div>
   </div>
 </div>

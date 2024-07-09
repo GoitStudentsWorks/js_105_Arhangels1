@@ -25,11 +25,7 @@
   pointer-events: none;
 }
 
-.footer{
-  background-color:var(--background--color);
-}
-
-.footer{
+.footer-container{
   padding:32px 16px;
 }
 
@@ -212,7 +208,7 @@
 }
 
 @media screen and (min-width:768px){
-  .footer{
+  .footer-container{
     padding:80px 0;
   }
 
@@ -261,7 +257,7 @@
 }
 
 @media screen and (min-width:1440px){
-  .footer{
+  .footer-container{
     padding:80px 164px;
   }
 
