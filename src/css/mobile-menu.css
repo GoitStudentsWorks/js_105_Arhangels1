@@ -5,9 +5,9 @@
     min-width: 100%;
     min-height: 812px;
     padding: 15px;
-    background-color: blue;
+/*     background-color: blue; */
     object-fit: fill;
-    /* background-image: url(); */
+    background-image: url('../img/hero/background-glass.png');
     transform: translateY(-100%);
     background-repeat: no-repeat;
     transition: transform 0.5s;
