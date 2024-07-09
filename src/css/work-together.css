@@ -180,9 +180,13 @@
 
 .backdrop__modal__animation{
   animation: bounceInRight;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
+.backdrop__modal__out__animation{
+  animation: bounceOutRight;
+  animation-duration: 1s;
+}
 
 .backdrop__modal__content h4{
   font-weight:600;
