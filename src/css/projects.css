@@ -49,6 +49,11 @@
     padding: 100px 16px;
 }
 
+.project-img{
+    width: 311px;
+    height: 195px;
+}
+
 .buttons-wrapper{
     display: flex;
     gap: 12px;
@@ -94,6 +99,11 @@
         padding: 120px 45px;
     }
 
+    .project-img {
+        width: 614px;
+        height: auto;
+    }
+
     .buttons-wrapper{
         gap: 20px;
     }
@@ -109,7 +119,6 @@
 
     .projects-swiper-slide {
         flex-direction: row;
-        /* авто стилі додають display: block; тому не працюють флекси */
         width: 1376px;
         max-height: 625px;
     }
