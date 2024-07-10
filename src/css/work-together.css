@@ -24,9 +24,9 @@
   visibility: hidden;
   pointer-events: none;
 }
-
-.footer-container{
-  padding:32px 16px;
+.footer{
+  padding-top:32px;
+  padding-bottom:32px;
 }
 
 .footer__title{
@@ -169,6 +169,7 @@
 }
 
 .modal{
+  position: relative;
   text-align:center;
   width:343px;
   height:276px;
@@ -176,6 +177,13 @@
   background-color:var(--modal--background--color);
   border:1px solid var(--modal--border--color);
   border-radius:20px;
+}
+
+.modal__close-icon{
+  position: absolute;
+  top:20px;
+  right:20px;
+  cursor:pointer;
 }
 
 .backdrop__modal__animation{
@@ -212,8 +220,9 @@
 }
 
 @media screen and (min-width:768px){
-  .footer-container{
-    padding:80px 0;
+  .footer{
+    padding-top:80px;
+    padding-bottom:80px;
   }
 
   .footer__title{
@@ -261,8 +270,13 @@
 }
 
 @media screen and (min-width:1440px){
+  .footer{
+    padding-bottom:80px;
+    padding-top:80px;
+  }
   .footer-container{
-    padding:80px 164px;
+    padding-left: 164px;
+    padding-right:164px;
   }
 
   .footer__form{
