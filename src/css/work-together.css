@@ -24,8 +24,9 @@
   visibility: hidden;
   pointer-events: none;
 }
-.footer{
-  background-color:var(--background--color);
+
+.footer-container{
+  padding:32px 16px;
 }
 
 .footer__title{
@@ -179,9 +180,13 @@
 
 .backdrop__modal__animation{
   animation: bounceInRight;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
+.backdrop__modal__out__animation{
+  animation: bounceOutRight;
+  animation-duration: 1s;
+}
 
 .backdrop__modal__content h4{
   font-weight:600;
@@ -207,7 +212,7 @@
 }
 
 @media screen and (min-width:768px){
-  .footer{
+  .footer-container{
     padding:80px 0;
   }
 
@@ -256,7 +261,7 @@
 }
 
 @media screen and (min-width:1440px){
-  .footer{
+  .footer-container{
     padding:80px 164px;
   }
 

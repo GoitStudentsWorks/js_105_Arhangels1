@@ -103,9 +103,12 @@ function onBackdropClick(e){
   }
 }
 
-function closeModal(){
-  toggleModal()
-  disableScroll.off();
+ function closeModal(){
+    toggleModal()
+    outModal()
+   modal.addEventListener('animationend', outModalAndDeleteEventListeners)
+ disableScroll.off();
+
   window.removeEventListener('keydown', closeByEscape)
 }
 function makeModalContent({title, message}){
@@ -113,4 +116,14 @@ function makeModalContent({title, message}){
         <h4>${title}</h4>
         ${message ? `<p>${message}</p>`: ''}
       </div>`
+}
+
+function outModalAndDeleteEventListeners() {
+  outModal()
+  modal.removeEventListener('animationend', outModalAndDeleteEventListeners)
+}
+function outModal() {
+   backdrop.classList.toggle('is-hidden--modal')
+   modal.classList.toggle('animate__bounceOutRight')
+   modal.classList.toggle('backdrop__modal__out__animation')
 }
