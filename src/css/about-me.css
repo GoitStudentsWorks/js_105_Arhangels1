@@ -76,6 +76,7 @@
 }
 
 .about-me__list__item {
+  margin-top:0 !important;
   transition: padding 250ms ease-out;
 }
 
@@ -89,6 +90,7 @@
   justify-content: center;
   border: 1px solid var(--icon-border-color);
   border-radius: 100px;
+  width:40px;
   padding: 10px;
 }
 
