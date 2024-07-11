@@ -57,7 +57,15 @@
   transform: rotate(180deg);
 }
 
-.faq-item.is-active .faq-answer {
+.faq-item-desktop.is-active .faq-arrow {
+  transform: rotate(180deg);
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item-desktop.active .faq-answer {
   display: block;
 }
 
