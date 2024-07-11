@@ -24,9 +24,9 @@
   visibility: hidden;
   pointer-events: none;
 }
+
 .footer{
-  background-color:var(--background--color);
-  padding:32px 16px;
+  padding: 32px 0;
 }
 
 .footer__title{
@@ -62,7 +62,7 @@
   flex-direction: column;
 }
 
-input{
+.footer__form__input{
   font-weight:500;
   font-size:16px;
   line-height:1.5;
@@ -76,7 +76,7 @@ input{
   text-overflow: ellipsis;
 }
 
-input[name='email']:valid{
+.footer__form__input[name='email']:valid{
   border-bottom:1px solid var(--valid);
 }
 
@@ -88,7 +88,7 @@ input[name='email']:valid{
   color:var(--invalid)
 }
 
-input[name='email']:focus:invalid{
+.footer__form__input[name='email']:focus:invalid{
   border-bottom:1px solid var(--invalid);
 }
 
@@ -169,6 +169,7 @@ input[name='email']:focus:invalid{
 }
 
 .modal{
+  position: relative;
   text-align:center;
   width:343px;
   height:276px;
@@ -178,11 +179,22 @@ input[name='email']:focus:invalid{
   border-radius:20px;
 }
 
-.backdrop__modal__animation{
-  animation: bounceInRight;
-  animation-duration: 2s;
+.modal__close-icon{
+  position: absolute;
+  top:20px;
+  right:20px;
+  cursor:pointer;
 }
 
+.backdrop__modal__animation{
+  animation: bounceInRight;
+  animation-duration: 1s;
+}
+
+.backdrop__modal__out__animation{
+  animation: bounceOutRight;
+  animation-duration: 1s;
+}
 
 .backdrop__modal__content h4{
   font-weight:600;
@@ -209,7 +221,7 @@ input[name='email']:focus:invalid{
 
 @media screen and (min-width:768px){
   .footer{
-    padding:80px 32px;
+    padding:80px 0
   }
 
   .footer__title{
@@ -225,7 +237,7 @@ input[name='email']:focus:invalid{
     display: block;
   }
 
-  input{
+  .footer__form__input{
     width:245px;
     margin-right:32px;
   }
@@ -258,18 +270,22 @@ input[name='email']:focus:invalid{
 
 @media screen and (min-width:1440px){
   .footer{
-    padding:80px 192px;
+    padding:80px 0;
+  }
+  
+  .footer-container{
+    padding:0 164px;
   }
 
   .footer__form{
     margin-bottom:78px;
   }
 
-  input{
+  .footer__form__input{
     min-width:390px;
   }
 
-  input:nth-child(2){
+  .footer__form__input:nth-child(2){
     margin-right:86px;
   }
 

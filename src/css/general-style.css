@@ -5,9 +5,11 @@ html {
 body {
    font-family: "Inter Tight", sans-serif;
    font-weight: 500;
+   font-size: 14px;
    line-height: 1.5;
    letter-spacing: -0.02em;
    color: #fafafa;
+   background-color: #1c1d20;
 }
 
 .visually-hidden {
@@ -24,22 +26,23 @@ body {
 }
 
 /* Container ---------------------- */
+
+/* Мобільні пристрої (375px) */
 .container {
-   max-width: 767px;
-   padding-left: 16px;
-   padding-right: 16px;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 0 auto;
+   max-width: 375px;
+   padding: 0 16px;
 }
 
+/* Планшетні пристрої (768px) */
 @media only screen and (min-width: 768px) {
    .container {
       max-width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
+      padding: 0 32px;
    }
 }
 
+/* Десктопні пристрої (1440px) */
 @media only screen and (min-width: 1440px) {
    .container {
       max-width: 1440px;
@@ -54,8 +57,12 @@ body {
 
 .section-title {
    font-weight: 600;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: -0.02em;
    text-transform: uppercase;
    color: rgba(250, 250, 250, 0.4);
+   margin-bottom: 32px;
    text-align: left;
 }
 
@@ -64,6 +71,7 @@ body {
 
 
 /* Section-paddings --------------- */
+
 .about-me,
 .benefits,
 .projects,
@@ -72,6 +80,10 @@ body {
 .reviews {
    padding-top: 32px;
    padding-bottom: 32px;
+}
+
+.about-me {
+   padding-top: 64px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -86,10 +98,13 @@ body {
       padding-bottom: 48px;
    }
 
+   .about-me {
+      padding-top: 64px;
+   }
 }
 
 @media only screen and (min-width: 1400px) {
-
+   
    .about-me,
    .benefits,
    .projects,
@@ -100,6 +115,10 @@ body {
       padding-bottom: 82px;
    }
 
+   .about-me {
+      padding-top: 96px;
+   }
+      
 }
 
 /* ---------------- /Section-paddings */
@@ -116,9 +135,10 @@ body {
    text-align: center;
 
    display: inline-block;
+   margin-right: auto;
    background-color: #ed3b44;
    border-radius: 60px;
-   padding: 13px 10px;
+   padding: 13px 32px;
    min-width: 141px;
    height: 45px;
    transition: background-color 250ms ease;
@@ -133,6 +153,7 @@ body {
    .button-accent-color {
       min-width: 177px;
       height: 55px;
+      padding: 18px 50px;
    }
 }
 /* /Button-accent-color ---------------------*/

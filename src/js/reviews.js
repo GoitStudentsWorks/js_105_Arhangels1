@@ -4,14 +4,12 @@ import { Navigation, Keyboard } from 'swiper/modules';
 import axios from 'axios';
 
 const swiperOptions = {
-  //   loop: true,
   modules: [Navigation, Keyboard],
   navigation: {
-    nextEl: '.reviews-next-btn', //'.swiper-button-next',
-    prevEl: '.reviews-prev-btn', //'.swiper-button-prev',
+    nextEl: '.reviews-next-btn',
+    prevEl: '.reviews-prev-btn',
   },
-  // autoHeight: true,
-  direction: 'horizontal',
+
   keyboard: {
     enabled: true,
     onlyInViewport: true,
@@ -32,23 +30,11 @@ const swiperOptions = {
 };
 const swiperReviews = new Swiper('.swiper-reviews', swiperOptions);
 
-swiperReviews.on('reachBeginning', function () {
-  refs.prevBtn.classList.add('reviews-prev-btn-off');
-  refs.nextBtn.classList.remove('reviews-prev-btn-off');
-});
-
-swiperReviews.on('reachEnd', function () {
-  refs.nextBtn.classList.add('reviews-prev-btn-off');
-  refs.prevBtn.classList.remove('reviews-prev-btn-off');
-});
-
 const refs = {
   slideWrapper: document.querySelector('.reviews-swiper-wrapper'),
   prevBtn: document.querySelector('.reviews-prev-btn'),
   nextBtn: document.querySelector('.reviews-next-btn'),
 };
-
-refs.prevBtn.classList.add('reviews-prev-btn-off');
 
 async function getReviews() {
   const res = await axios.get('https://portfolio-js.b.goit.study/api/reviews', {
@@ -63,21 +49,21 @@ async function getReviews() {
 getReviews();
 
 function slideTemplate(slide) {
-  return `<div class="swiper-slide reviews-swiper-slide">
+  return `<li class="swiper-slide reviews-swiper-slide">
           <img
             class="reviews-img"
             src="${slide.avatar_url}"
-            alt="Natalia"
+            alt="${slide.author}"
           />
           <div class="reviews-desc">
             <p class="reviews-name">${slide.author}</p>
             <p class="reviews-text">${slide.review}</p>
           </div>
-        </div>`;
+        </li>`;
 }
 
-function slidesTemplate(slades) {
-  return slades.map(slideTemplate).join('');
+function slidesTemplate(slides) {
+  return slides.map(slideTemplate).join('');
 }
 
 refs.nextBtn.addEventListener('click', () => {
@@ -86,14 +72,4 @@ refs.nextBtn.addEventListener('click', () => {
 
 refs.prevBtn.addEventListener('click', () => {
   refs.nextBtn.classList.remove('reviews-prev-btn-off');
-});
-
-document.addEventListener('keydown', e => {
-  e.preventDefault();
-  if (e.code === 'ArrowRight') {
-    refs.prevBtn.classList.remove('reviews-prev-btn-off');
-  }
-  if (e.code === 'ArrowLeft') {
-    refs.nextBtn.classList.remove('reviews-prev-btn-off');
-  }
 });
