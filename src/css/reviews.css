@@ -67,7 +67,7 @@
   cursor: pointer;
   fill: #fafafa;
 }
-.reviews-prev-btn-off {
+.swiper-button-disabled {
   border: 1px solid #3b3b3b;
   fill: #3b3b3b;
 }
