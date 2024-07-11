@@ -24,9 +24,9 @@
   visibility: hidden;
   pointer-events: none;
 }
+
 .footer{
-  padding-top:32px;
-  padding-bottom:32px;
+  padding: 32px 0;
 }
 
 .footer__title{
@@ -221,8 +221,7 @@
 
 @media screen and (min-width:768px){
   .footer{
-    padding-top:80px;
-    padding-bottom:80px;
+    padding:80px 0
   }
 
   .footer__title{
@@ -271,12 +270,11 @@
 
 @media screen and (min-width:1440px){
   .footer{
-    padding-bottom:80px;
-    padding-top:80px;
+    padding:80px 0;
   }
+  
   .footer-container{
-    padding-left: 164px;
-    padding-right:164px;
+    padding:0 164px;
   }
 
   .footer__form{
