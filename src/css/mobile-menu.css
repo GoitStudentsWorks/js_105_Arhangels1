@@ -6,9 +6,8 @@
     background-position: center;
 
     padding: 15px;
-/*     background-color: blue; */
     object-fit: fill;
-    background-image: url('../img/hero/background-glass.png');
+    background-image: url('../img/hero/background-glass.webp');
     transform: translateY(-100%);
     background-repeat: no-repeat;
     transition: transform 0.5s;
@@ -64,6 +63,9 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    font-weight: 500;
+        font-size: 16px;
+
 }
 
 .mobile-menu-item {
@@ -71,12 +73,14 @@
     letter-spacing: -0.02em;
     margin: 0 auto;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .mobile-menu-order-btn {
     width: 164px;
+        align-items: center;
+            justify-content: center;
+            display: flex;
 }
 
 .mobile-menu-list>li {
@@ -115,7 +119,7 @@
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
     .mobile-menu {
         object-fit: fill;
-        background-image: url('../img/hero/background-glass@x2.png');
+        background-image: url('../img/hero/background-glass@x2.webp');
     }
 }
 
