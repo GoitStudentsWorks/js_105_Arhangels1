@@ -2,7 +2,7 @@
     <div class="container">
         <h2 class="section-title">Projects</h2>
 
-        <div class="projects-swiper swiper">
+        <div class="swiper projects-swiper">
             <ul class="swiper-wrapper projects-swiper-wrapper">
                 <li class="swiper-slide projects-swiper-slide">
                     <div class="swiper-slide-description">
@@ -14,17 +14,18 @@
                         </ul>
                         <div class="project-description">
                             <h3 class="project-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
-                            <a href="https://github.com/Arhangels1/project-14" class="project-link" target="_blank">See project</a>
+                            <a href="https://github.com/Arhangels1/project-14" class="project-link button-accent-color" rel="search"
+                                target="_blank">See project</a>
                         </div>
                     </div>
                     <div class="image-wrapper">
                         <picture>
-                            <source media="(min-width: 768px)" srcset="./img/projects/tablet-project-1.jpg 1x,
-                                                        ./img/projects/tablet-project-1@2x.jpg 2x">
-                            <source media="(max-width: 767px)" srcset="./img/projects/mobile-project-1.jpg 1x,
-                                                        ./img/projects/mobile-project-1@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./img/projects/tablet-project-1.webp 1x,
+                                                        ./img/projects/tablet-project-1@2x.webp 2x">
+                            <source media="(max-width: 767px)" srcset="./img/projects/mobile-project-1.webp 1x,
+                                                        ./img/projects/mobile-project-1@2x.webp 2x">
                         
-                            <img class="project-img" src="./img/projects/mobile-project-1.jpg" alt="Read journey application">
+                            <img class="project-img" src="./img/projects/mobile-project-1.webp" alt="Read journey application">
                         </picture>
                     </div>
                 </li>
@@ -38,17 +39,18 @@
                         </ul>
                         <div class="project-description">
                             <h3 class="project-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
-                            <a href="https://github.com/Arhangels1/project-14" class="project-link" target="_blank">See project</a>
+                            <a href="https://github.com/Arhangels1/project-14" class="project-link button-accent-color" rel="search" 
+                            target="_blank">See project</a>
                         </div>
                     </div>
                     <div class="image-wrapper">
                         <picture>
-                            <source media="(min-width: 768px)" srcset="./img/projects/tablet-project-2.jpg 1x,
-                                                        ./img/projects/tablet-project-2@2x.jpg 2x">
-                            <source media="(max-width: 767px)" srcset="./img/projects/mobile-project-2.jpg 1x,
-                                                        ./img/projects/mobile-project-2@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./img/projects/tablet-project-2.webp 1x,
+                                                        ./img/projects/tablet-project-2@2x.webp 2x">
+                            <source media="(max-width: 767px)" srcset="./img/projects/mobile-project-2.webp 1x,
+                                                        ./img/projects/mobile-project-2@2x.webp 2x">
                         
-                            <img class="project-img" src="./img/projects/mobile-project-2.jpg" alt="PetLove application">
+                            <img class="project-img" src="./img/projects/mobile-project-2.webp" alt="PetLove application">
                         </picture>
                     </div>
                 </li>
@@ -62,33 +64,38 @@
                         </ul>
                         <div class="project-description">
                             <h3 class="project-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
-                            <a href="https://github.com/Arhangels1/project-14" class="project-link" target="_blank">See project</a>
+                            <a href="https://github.com/Arhangels1/project-14" class="project-link button-accent-color" rel="search"
+                            target="_blank">See project</a>
                         </div>
                     </div>
                     <div class="image-wrapper">
                         <picture>
-                            <source media="(min-width: 768px)" srcset="./img/projects/tablet-project-3.jpg 1x,
-                                                        ./img/projects/tablet-project-3@2x.jpg 2x">
-                            <source media="(max-width: 767px)" srcset="./img/projects/mobile-project-3.jpg 1x,
-                                                        ./img/projects/mobile-project-3@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./img/projects/tablet-project-3.webp 1x,
+                                                        ./img/projects/tablet-project-3@2x.webp 2x">
+                            <source media="(max-width: 767px)" srcset="./img/projects/mobile-project-3.webp 1x,
+                                                        ./img/projects/mobile-project-3@2x.webp 2x">
                         
-                            <img class="project-img" src="./img/projects/mobile-project-3.jpg" alt="VocabBuilder application">
+                            <img class="project-img" src="./img/projects/mobile-project-3.webp" alt="VocabBuilder application">
                         </picture>
                     </div>
                 </li>
             </ul>
             
             <div class="buttons-wrapper"> 
-                <div class="projects-button-prev arrow-btn">
-                    <svg class="arrow-prev" width="24px" height="24px">
-                        <use href="./img/sprite.svg#icon-right-arrow"></use>
+                <button class="projects-button-prev arrow-btn" 
+                  aria-label="previous button"
+                  type="button">
+                    <svg class="arrow-prev-svg" width="24px" height="24px">
+                        <use href="./img/sprite.svg#icon-new-arrow-left"></use>
                     </svg>
-                </div>
-                <div class="projects-button-next arrow-btn">
-                    <svg class="arrow-next" width="24px" height="24px">
-                        <use href="./img/sprite.svg#icon-right-arrow"></use>
+                </button>
+                <button class="projects-button-next arrow-btn" 
+                  aria-label="next button"
+                  type="button">
+                    <svg class="arrow-next-svg" width="24px" height="24px">
+                        <use href="./img/sprite.svg#icon-new-arrow-right"></use>
                     </svg>
-                </div>
+                </button>
             </div>
 
         </div>

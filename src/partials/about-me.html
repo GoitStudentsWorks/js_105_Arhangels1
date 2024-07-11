@@ -1,61 +1,132 @@
-<section class="about-me">
-  <ul class="about-me__list">
-    <li class="about-me__list__item ac">
-      <div class="about-me__list__item__header ac-trigger">
-        <h6 class="about-me__list__item__header__title">ABOUT ME</h6>
-        <button type="button" class="about-me__list__item__header__trigger">
-          <svg width="24px" height="24px" class="about-me__list__item__header__trigger__icon">
-            <use href="./img/sprite.svg#icon-down-arrow"></use>
-          </svg>
-        </button>
+<section class="about-me" id="about-me">
+  <div class="container">
+    <h2 class="hidden-title">ABOUT ME</h2>
+    <div class="about-me__represent">
+      <div class="about-me__represent__text">
+        <p>
+          I work with people all over the world to create impressive and <span
+          class="functional__text">functional</span>
+          <span class="websites__text">websites</span> that reflect each client's
+          unique personality.
+        </p>
       </div>
-      <div class="about-me__list__item__content ac-panel">
-        <p class="about-me__list__item__content__first-text">I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an
-          understanding of different programming languages ​​and technologies, always ready to improve my skills. I always
-          follow the latest trends and look for unconventional, creative solutions to problems. I have a high level of
-          analytical skills and am able to effectively solve even the most difficult tasks encountered on the way.</p>
-        <p class="about-me__list__item__content__second-text">Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas
-          and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful
-          situations, while maintaining a high quality of work.
-          I am always looking for opportunities for
-          self-improvement. I actively study new technologies and practices to stay abreast of the latest innovations. I
-          have a strong understanding of various programming languages, frameworks and architectural concepts that allow
-          me to create efficient and scalable software.</p>
+      <div class="about-me__represent__image">
+        <picture>
+          <source
+            srcset="
+                   ./img/about-me/jeff-image-mobile@1x.webp 1x,
+                   ./img/about-me/jeff-image-mobile@2x.webp 2x,
+                   ./img/about-me/jeff-image-mobile@3x.webp 3x
+                 "
+            media="(max-width:767px)"
+          />
+          <source
+            srcset="
+                   ./img/about-me/jeff-image-tablet@1x.webp 1x,
+                   ./img/about-me/jeff-image-tablet@2x.webp 2x,
+                   ./img/about-me/jeff-image-tablet@3x.webp  3x
+                 "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+                   ./img/about-me/jeff-image@1x.webp 1x,
+                   ./img/about-me/jeff-image@2x.webp 2x,
+                   ./img/about-me/jeff-image@3x.webp  3x
+                 "
+            media="(min-width:1440px)"
+          />
+          <img src="./img/about-me/jeff-image-mobile@1x.webp" alt="user-icon"/>
+        </picture>
       </div>
-    </li>
-    <li  class="about-me__list__item ac">
-      <div class="about-me__list__item__header ac-trigger">
-        <h6 class="about-me__list__item__header__title">ROLE</h6>
-        <button type="button" class="about-me__list__item__header__trigger">
-          <svg width="24px" height="24px" class="about-me__list__item__header__trigger__icon">
-            <use href="./img/sprite.svg#icon-down-arrow"></use>
-          </svg>
-        </button>
-      </div>
-            <div class="about-me__list__item__content ac-panel">
-              <ul class="role__link">
-                <li class="item">Frontend development</li>
-                <li class="item">HeadlessCMS,Wordpress</li>
-                <li class="item">Blender(enjoy)</li>
-              </ul>
-            </div>
-    </li>
-    <li class="about-me__list__item ac">
-      <div class="about-me__list__item__header ac-trigger">
-        <h6 class="about-me__list__item__header__title">ABOUT ME</h6>
-        <button type="button" class="about-me__list__item__header__trigger">
-          <svg width="24px" height="24px" class="about-me__list__item__header__trigger__icon">
-            <use href="./img/sprite.svg#icon-down-arrow"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="about-me__list__item__content ac-panel">
-        <ul class="education__link">
-          <li class="education__link__item">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</li>
-          <li class="education__link__item">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</li>
-          <li class="education__link__item">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+    </div>
+    <ul class="about-me__list">
+      <li class="about-me__list__item ac">
+        <div class="about-me__list__item__header ac-trigger">
+          <h3 class="about-me__list__item__header__title">ABOUT ME</h3>
+          <button type="button" class="about-me__list__item__header__trigger" aria-label="check more">
+            <svg width="24px" height="24px" class="about-me__list__item__header__trigger__icon">
+              <use href="./img/sprite.svg#icon-down-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="about-me__list__item__content ac-panel">
+          <p class="about-me__list__item__content__first-text">I am Lloyd Jefferson, a talented programmer with
+            extensive
+            expertise in software development. I have an
+            understanding of different programming languages ​​and technologies, always ready to improve my skills. I
+            always
+            follow the latest trends and look for unconventional, creative solutions to problems. I have a high level of
+            analytical skills and am able to effectively solve even the most difficult tasks encountered on the way.</p>
+          <p class="about-me__list__item__content__second-text">Able to work both independently and in a team. I can
+            effectively cooperate with colleagues, exchanging ideas
+            and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful
+            situations, while maintaining a high quality of work.
+            I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to stay abreast of the latest innovations.
+            I
+            have a strong understanding of various programming languages, frameworks and architectural concepts that
+            allow
+            me to create efficient and scalable software.</p>
+        </div>
+      </li>
+      <li class="about-me__list__item ac">
+        <div class="about-me__list__item__header ac-trigger">
+          <h3 class="about-me__list__item__header__title">ROLE</h3>
+          <button type="button" class="about-me__list__item__header__trigger" aria-label="check more">
+            <svg width="24px" height="24px" class="about-me__list__item__header__trigger__icon">
+              <use href="./img/sprite.svg#icon-down-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="about-me__list__item__content ac-panel">
+          <ul class="role__link">
+            <li class="item">Frontend development</li>
+            <li class="item">HeadlessCMS,Wordpress</li>
+            <li class="item">Blender(enjoy)</li>
+          </ul>
+        </div>
+      </li>
+      <li class="about-me__list__item ac">
+        <div class="about-me__list__item__header ac-trigger">
+          <h3 class="about-me__list__item__header__title">EDUCATION</h3>
+          <button type="button" class="about-me__list__item__header__trigger" aria-label="check more">
+            <svg width="24px" height="24px" class="about-me__list__item__header__trigger__icon">
+              <use href="./img/sprite.svg#icon-down-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="about-me__list__item__content ac-panel">
+          <ul class="education__link">
+            <li class="education__link__item">2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York</li>
+            <li class="education__link__item">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New
+              York
+            </li>
+            <li class="education__link__item">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <div class="about-me__swiper__container">
+      <div class="swiper skills__swiper" style="margin-left:0;">
+        <ul class="swiper-wrapper skills__swiper__wrapper">
+          <li class="skills__swiper__wrapper__item swiper-slide next-slide-bg">HTML/CSS</li>
+          <li class="skills__swiper__wrapper__item swiper-slide">JavaScript</li>
+          <li class="skills__swiper__wrapper__item swiper-slide">React</li>
+          <li class="skills__swiper__wrapper__item swiper-slide">Node.js</li>
+          <li class="skills__swiper__wrapper__item swiper-slide">React Native</li>
+          <li class="skills__swiper__wrapper__item swiper-slide">Soft Skills</li>
+          <li class="skills__swiper__wrapper__item swiper-slide">English C1</li>
         </ul>
+
       </div>
-    </li>
-  </ul>
+
+      <div class="skills__swiper__next swiper-button-next">
+        <svg class="skill__swiper__next__icon">
+          <use href="./img/sprite.svg#icon-new-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
 </section>

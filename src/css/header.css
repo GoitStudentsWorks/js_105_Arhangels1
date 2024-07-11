@@ -13,7 +13,19 @@ left: 0;
 }
 
 .header-logo {
+  display: flex;
+  gap: 8px;
   border: 1px solid transparent;
+}
+
+.header-text {
+  font-weight: 500;
+    font-size: 20px;
+}
+
+.header-logo-img {
+  width: 80px;
+  height: 80px;
 }
 
 .header-logo:focus {
@@ -36,6 +48,7 @@ left: 0;
 
 .mobile-menu-btn {
   width: 28px;
+  
   height: 28px;
   background-color: transparent;
   position: relative;
@@ -48,6 +61,7 @@ left: 0;
   fill: #fafafa;
 }
 
+
 /* for tablet */
 @media screen and (min-width: 768px) {
   .header-menu-container {
@@ -56,6 +70,8 @@ left: 0;
       align-items: center;
     }
         .header-menu-btn {
+          font-weight: 500;
+            font-size: 16px;
           color:inherit;
           margin-bottom: 18px;
           line-height: normal;
@@ -66,11 +82,22 @@ left: 0;
           text-decoration-skip-ink: none;
         }
         .header-list-navigation {
+          opacity: 0;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 5px;
+          overflow: hidden;
+          transition: opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+
+        .header-text {
+font-weight: 500;
+  font-size: 16px;
         }
+
+.header-list-navigation.visible {
+  opacity: 1;
+}
 
         .is-hidden {
     opacity: 0;
@@ -78,8 +105,11 @@ left: 0;
   }
 
         .header-link-btn {
-              display: block;
+          align-items: center;
+          justify-content: center;
+              display: flex;
     letter-spacing: -0.02em;
+    font-size: 16px;
     border-radius: 60px;
     padding: 18px 24px;
     width: 163px;
@@ -87,6 +117,11 @@ left: 0;
     background-color: #ed3b44;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+                .header-link-btn:hover,
+                .header-link-btn:focus,
+                .header-link-btn:active {
+                  background-color: #e0373f;
+                }
 
         .header-list-item {
           border-bottom: 2px solid transparent;
@@ -98,12 +133,10 @@ left: 0;
        .header-list-item:focus,
        .header-list-item:active {
         color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
         border-bottom: 2px solid #ed3b44;
        }
        .mobile-menu-btn {
         display: none;
        }
-}
 
-/* for desktop */
+      }
