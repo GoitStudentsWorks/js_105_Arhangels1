@@ -71,6 +71,7 @@ body {
 
 
 /* Section-paddings --------------- */
+
 .about-me,
 .benefits,
 .projects,
@@ -79,6 +80,10 @@ body {
 .reviews {
    padding-top: 32px;
    padding-bottom: 32px;
+}
+
+.about-me {
+   padding-top: 64px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -93,10 +98,13 @@ body {
       padding-bottom: 48px;
    }
 
+   .about-me {
+      padding-top: 96px;
+   }
 }
 
 @media only screen and (min-width: 1400px) {
-
+   
    .about-me,
    .benefits,
    .projects,
@@ -107,6 +115,10 @@ body {
       padding-bottom: 82px;
    }
 
+   .about-me {
+      padding-top: 164px;
+   }
+      
 }
 
 /* ---------------- /Section-paddings */

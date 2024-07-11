@@ -7,7 +7,7 @@
 
     padding: 15px;
     object-fit: fill;
-    background-image: url('../img/hero/background-glass.png');
+    background-image: url('../img/hero/background-glass.webp');
     transform: translateY(-100%);
     background-repeat: no-repeat;
     transition: transform 0.5s;
@@ -119,7 +119,7 @@
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
     .mobile-menu {
         object-fit: fill;
-        background-image: url('../img/hero/background-glass@x2.png');
+        background-image: url('../img/hero/background-glass@x2.webp');
     }
 }
 
