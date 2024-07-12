@@ -221,7 +221,8 @@
 
 @media screen and (min-width:768px){
   .footer{
-    padding:80px 0
+    padding-top:80px;
+    padding-bottom:169px;
   }
 
   .footer__title{
@@ -270,9 +271,10 @@
 
 @media screen and (min-width:1440px){
   .footer{
-    padding:80px 0;
+    padding-top:80px;
+    padding-bottom:169px;
   }
-  
+
   .footer-container{
     padding:0 164px;
   }
